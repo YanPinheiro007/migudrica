@@ -1,7 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
-    color: #333;
+    color: #e7e7e7;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -28,10 +28,16 @@
     
 }
 
+img:hover{
+    box-shadow: 4px 4px 4px rgba(250, 249, 249, 0.4);
+
+}
+
 body{
     padding-top: 80px;
     padding-bottom: 80px;
-    background-image: linear-gradient(to bottom, #320A28, #F4442E)
+    background-image: linear-gradient(to bottom, #320A28, #F4442E);
+    height: 100vh;
 }
 
 h1{
@@ -39,14 +45,17 @@ h1{
     font-size: medium;
     color: darkgrey;
     text-align: center;
+    margin-bottom: 50px;
 }
 
+h2{
+    font-size: medium;
+}
 main{
     padding: 30px;
     margin-top: 100px;
-    min-width: 320px;
-    max-width: 500px;
-    height: 500px;
+    max-width: 200px;
+    height: 50vh;
     background-color: #320A28;
     margin: auto;
     box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.4);
