@@ -15,7 +15,7 @@
 }
 
 .container{
-    
+    align-items: center;
     text-align: center;
 }
 
@@ -55,14 +55,87 @@ h1{
 
 h2{
     font-size: medium;
+    box-sizing: 12px;
 }
 main{
     padding: 30px;
     margin-top: 100px;
     max-width: 200px;
-    height: 50vh;
+    height: 60vh;
     background-color: #320A28;
     margin: auto;
     box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.4);
     border-radius: 10px;
+    text-align: center;
+    
 }
+
+.btn {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+
+div[class*=box] {
+    height: 33.33%;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+.btn-two {
+    color: #FFF;
+    transition: all 0.10s;
+    position: relative; 
+    border-radius: 10px;
+  }
+  .btn-two span {
+    z-index: 2; 
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    border-radius: 10px;
+  }
+  .btn-two::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(174, 11, 195, 0.1);
+    border-radius: 10px;
+  }
+  .btn-two::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 10px;
+  }
+  .btn-two:hover::before {
+    transform: rotate(-45deg);
+    background-color: rgba(255,255,255,0);
+    border-radius: 10px;
+  }
+  .btn-two:hover::after {
+    transform: rotate(45deg);
+    background-color: rgba(255,255,255,0);
+    border-radius: 10px;
+  }
