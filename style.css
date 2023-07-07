@@ -41,7 +41,7 @@ img:hover{
 body{
     padding-top: 80px;
     padding-bottom: 80px;
-    background-image: linear-gradient(to bottom, #6d1757, #F4442E);
+    background-image: linear-gradient(to bottom, #6d1757, #f4b52e);
     height: 100vh;
 }
 
